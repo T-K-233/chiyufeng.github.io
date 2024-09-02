@@ -9,9 +9,16 @@
   </head>
   <body>
     <div class="container mx-auto px-4">
-      <div class="grid grid-cols-4 py-8">
+      <div class="flex flex-wrap py-4">
         <!-- Navigation -->
-        <div class="col-span-4 md:col-span-1 font-medium text-gray-900">
+        <div class="basis-full md:hidden">
+          <button onclick="document.getElementById('navbar').classList.toggle('hidden')">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>        
+        </div>
+        <div class="basis-full md:basis-1/4 font-medium text-gray-900 hidden md:block" id="navbar">
           <div>
             <a href="http://chiyufeng.me/" class="block py-2 hover:underline">Home</a>
           </div>
@@ -19,13 +26,13 @@
             <a href="" class="block py-2 hover:underline">Curriculum Vitae</a>
           </div>
           <div>
-            <a href="http://chiyufeng.me/publications.html" class="block py-2 hover:underline">Publications</a>
+            <a href="http://chiyufeng.me/publications" class="block py-2 hover:underline">Publications</a>
           </div>
           <div>
             <a href="https://notes.tk233.xyz/" class="block py-2 hover:underline">Techical Notes</a>
           </div>
           <div>
-            <a href="http://chiyufeng.me/designs.html" class="block py-2 hover:underline">Designs</a>
+            <a href="http://chiyufeng.me/designs" class="block py-2 hover:underline">Designs</a>
           </div>
           <div>
             <a href="https://github.com/T-K-233" class="block flex items-center py-2 hover:underline">
@@ -54,7 +61,7 @@
         </div>
 
         <!-- Content -->
-        <div class="col-span-4 md:col-span-3">
+        <div class="basis-full md:basis-3/4">
           <h1 class="text-2xl font-medium text-gray-900 py-2">Designs and Artworks</h1>
           <div class="grid grid-cols-6 gap-2 py-2">
             <img src="designs/fgc_china.png">
